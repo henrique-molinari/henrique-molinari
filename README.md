@@ -58,17 +58,9 @@
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=henrique-molinari&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
+<img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=henrique-molinari&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=henrique-molinari&theme=tokyonight&hide_border=true"/>
+<img width="49%" src="https://streak-stats.demolab.com?user=henrique-molinari&theme=tokyonight&hide_border=true"/>
 
 </div>
 
@@ -91,17 +83,22 @@
 </div>
 
 ---
+
 # 🐍 Snake Contributions
 
 <div align="center">
 
-![Snake animation](https://github.com/henrique-molinari/henrique-molinari/blob/output/github-contribution-grid-snake-dark.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/henrique-molinari/henrique-molinari/blob/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/henrique-molinari/henrique-molinari/blob/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://github.com/henrique-molinari/henrique-molinari/blob/output/github-contribution-grid-snake-dark.svg">
+</picture>
 
 </div>
 
 ---
-<div align="center">
 
+<div align="center">
 
 *"A evolução é constante, um commit de cada vez."*
 
