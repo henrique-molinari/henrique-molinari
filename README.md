@@ -28,7 +28,7 @@
 
 ---
 
-# 🚀 Sobre Mim
+## 🚀 Sobre Mim
 
 - 🎓 Graduando em **Ciência da Computação** pela **UNIFEOB**
 - 💼 Experiência como **Aprendiz de TI** na **AUMOVIO**
@@ -38,23 +38,17 @@
 
 ---
 
-<div align="center">
+<div>
 
-## 💻 Linguagens & Frameworks
+## 💻 Linguagens & Frameworks & Ferramentas
 
-<img src="https://skillicons.dev/icons?i=java,dart,flutter,c,cpp&theme=dark" />
-
-<br><br>
-
-## 🗄️ Banco de Dados & Ferramentas
-
-<img src="https://skillicons.dev/icons?i=mysql,firebase,supabase,git,github,vscode&theme=dark" />
+<img src="https://skillicons.dev/icons?i=java,dart,flutter,c,cpp,mysql,firebase,supabase,git,github,vscode&theme=dark" />
 
 </div>
 
 ---
 
-# 📊 Estatísticas
+## 📊 Estatísticas
 
 <div align="center">
 
@@ -72,7 +66,7 @@
 
 ---
 
-# 📈 Atividade
+## 📈 Atividade
 
 <div align="center">
 
@@ -82,7 +76,7 @@
 
 ---
 
-# 🐍 Snake Contributions
+## 🐍 Snake Contributions
 
 <div align="center">
 
