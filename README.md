@@ -54,7 +54,7 @@
 
 ---
 
-# 📊 Estatísticas GitHub
+# 📊 Estatísticas
 
 <div align="center">
 
@@ -63,8 +63,6 @@
 <img width="49%" src="https://streak-stats.demolab.com?user=henrique-molinari&theme=tokyonight&hide_border=true"/>
 
 </div>
-
----
 
 <div align="center">
 
