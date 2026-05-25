@@ -20,6 +20,7 @@ jobs:
         with:
           github_user_name: henrique-molinari
           outputs: |
+            dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push Snake Animation
