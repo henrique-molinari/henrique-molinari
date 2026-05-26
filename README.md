@@ -60,7 +60,6 @@
 
 <div align="center">
 
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=henrique-molinari&theme=tokyonight&row=1&column=6&margin-w=15&margin-h=15&no-bg=true&no-frame=true"/>
 
 </div>
 
