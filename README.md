@@ -3,6 +3,8 @@
 <img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/e32f5e882fca859769ef178d2f596bcb98c3ff5c/header.svg" width="100%"/>
 </div>
 
+<br/>
+
 <!-- ===== THEME-AWARE HERO BANNER ===== -->
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
@@ -11,6 +13,8 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
   <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
 </picture>
+
+<br/>
 
 <!-- ===== GITHUB STATS ===== -->
 
