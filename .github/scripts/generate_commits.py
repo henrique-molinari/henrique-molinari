@@ -4,25 +4,28 @@ import datetime, json, os, sys, urllib.request
 
 USER = os.environ.get("GH_USER", "henrique-molinari")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-QUERY = """query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{
+YEAR = datetime.date.today().year
+QUERY = """query($u:String!,$from:DateTime!,$to:DateTime!){user(login:$u){contributionsCollection(from:$from,to:$to){contributionCalendar{
 totalContributions weeks{contributionDays{date contributionCount}}}}}}"""
 
 THEMES = {
-    "dark":  dict(bg="#060B08", title="#00FF66", text="#8FBF9F", levels=["#0F1F16", "#0B5A2A", "#00993A", "#00CC44", "#00FF66"]),
-    "light": dict(bg="#FFFFFF", title="#15803D", text="#3F5C4A", levels=["#E8F1EB", "#A7E9BF", "#5FD68A", "#16A34A", "#14532D"]),
+    "dark":  dict(bg="#060B08", title="#00FF66", text="#8FBF9F", levels=["#16241B", "#0E7A38", "#00A843", "#00D452", "#00FF66"]),
+    "light": dict(bg="#FFFFFF", title="#15803D", text="#3F5C4A", levels=["#E8F1EB", "#86E0A6", "#4CCB79", "#16A34A", "#14532D"]),
 }
 
 def fetch():
     req = urllib.request.Request(
         "https://api.github.com/graphql",
-        data=json.dumps({"query": QUERY, "variables": {"u": USER}}).encode(),
+        data=json.dumps({"query": QUERY, "variables": {"u": USER, "from": f"{YEAR}-01-01T00:00:00Z", "to": f"{YEAR}-12-31T23:59:59Z"}}).encode(),
         headers={"Authorization": f"Bearer {TOKEN}", "User-Agent": "commit-graph"})
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r)["data"]["user"]["contributionsCollection"]["contributionCalendar"]
 
 def level(n, mx):
+    # any day with a commit is clearly visible (level >= 1)
     if n == 0: return 0
-    return min(4, 1 + int(3 * (n - 1) / max(mx, 1)) + (1 if n == mx else 0)) if mx > 1 else 4
+    if n == 1 or mx <= 1: return 1
+    return min(4, 1 + max(1, round(3 * (n - 1) / (mx - 1))))
 
 def render(cal, t):
     weeks = cal["weeks"]
@@ -35,7 +38,7 @@ def render(cal, t):
          f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Commit activity">',
          f'<rect width="{W}" height="{H}" rx="12" fill="{t["bg"]}"/>',
          f'<text x="24" y="34" font-size="16" font-weight="700" fill="{t["title"]}">Commit Activity</text>',
-         f'<text x="{W-24}" y="34" font-size="12" text-anchor="end" fill="{t["text"]}">{cal["totalContributions"]} contributions in the last year</text>']
+         f'<text x="{W-24}" y="34" font-size="12" text-anchor="end" fill="{t["text"]}">{cal["totalContributions"]} contributions in {YEAR}</text>']
     last_m = -1
     for i, w in enumerate(weeks):
         d0 = w["contributionDays"][0]["date"]

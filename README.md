@@ -1,6 +1,10 @@
 <!-- ===== MATRIX HEADER ===== -->
 <div align="center">
-<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/e32f5e882fca859769ef178d2f596bcb98c3ff5c/header.svg" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/header.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/header-light.svg">
+  <img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/header-light.svg" width="100%"/>
+</picture>
 </div>
 
 <br/>
@@ -9,9 +13,9 @@
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
-  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/light.svg">
+  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/light.svg">
 </picture>
 
 <br/>
