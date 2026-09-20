@@ -1,6 +1,6 @@
 <!-- ===== MATRIX HEADER ===== -->
 <div align="center">
-<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/958be9f70fd289787b06e10fdbe4bcd9582e38eb/header.svg" width="100%"/>
+<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/e32f5e882fca859769ef178d2f596bcb98c3ff5c/header.svg" width="100%"/>
 </div>
 
 <br/>
