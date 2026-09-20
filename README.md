@@ -63,7 +63,6 @@
 -->
 
 <!-- ===== COMMIT ACTIVITY GRAPH ===== -->
-<br/>
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
