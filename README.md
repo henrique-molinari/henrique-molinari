@@ -27,20 +27,20 @@
 
 <!-- Streak — full width -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=henrique-molinari&hide_border=true&background=060B08&stroke=00FF66&ring=00CC44&fire=00FF66&currStreakLabel=00FF66&sideLabels=8FBF9F&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=3A5A45&titleColor=00FF66&card_width=1180" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=henrique-molinari&hide_border=true&background=FFFFFF&stroke=15803D&ring=16A34A&fire=15803D&currStreakLabel=15803D&sideLabels=3F5C4A&currStreakNum=0F172A&sideNums=0F172A&dates=8FBF9F&titleColor=15803D&card_width=1180" alt="Henrique's streak" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=henrique-molinari&hide_border=false&border_radius=18&background=060B08&stroke=00FF66&ring=00CC44&fire=00FF66&currStreakLabel=00FF66&sideLabels=8FBF9F&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=3A5A45&titleColor=00FF66&card_width=1180" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=henrique-molinari&hide_border=false&border_radius=18&background=FFFFFF&stroke=15803D&ring=16A34A&fire=15803D&currStreakLabel=15803D&sideLabels=3F5C4A&currStreakNum=0F172A&sideNums=0F172A&dates=8FBF9F&titleColor=15803D&card_width=1180" alt="Henrique's streak" />
 </picture>
 
 <br/>
 
 <!-- Stats + Top languages — side by side -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=00FF66&icon_color=00CC44&text_color=8FBF9F&bg_color=060B08&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Henrique's GitHub stats" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=false&border_radius=18&title_color=00FF66&icon_color=00CC44&text_color=8FBF9F&bg_color=060B08&card_width=500&border_color=00FF66" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=500&border_color=16A34A" alt="Henrique's GitHub stats" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=true&title_color=00FF66&text_color=8FBF9F&bg_color=060B08&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=true&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=00FF66&text_color=8FBF9F&bg_color=060B08&card_width=500&border_color=00FF66" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=500&border_color=16A34A" alt="Top languages" />
 </picture>
 
 </div>

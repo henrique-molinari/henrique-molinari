@@ -9,8 +9,8 @@ QUERY = """query($u:String!,$from:DateTime!,$to:DateTime!){user(login:$u){contri
 totalContributions weeks{contributionDays{date contributionCount}}}}}}"""
 
 THEMES = {
-    "dark":  dict(bg="#060B08", title="#00FF66", text="#8FBF9F", levels=["#16241B", "#0E7A38", "#00A843", "#00D452", "#00FF66"]),
-    "light": dict(bg="#FFFFFF", title="#15803D", text="#3F5C4A", levels=["#E8F1EB", "#86E0A6", "#4CCB79", "#16A34A", "#14532D"]),
+    "dark":  dict(bg="#060B08", border="#00FF66", title="#00FF66", text="#8FBF9F", levels=["#1A2A21", "#12A044", "#00A843", "#00D452", "#00FF66"]),
+    "light": dict(bg="#FFFFFF", border="#16A34A", title="#15803D", text="#3F5C4A", levels=["#E8F1EB", "#86E0A6", "#4CCB79", "#16A34A", "#14532D"]),
 }
 
 def fetch():
@@ -37,6 +37,7 @@ def render(cal, t):
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
          f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Commit activity">',
          f'<rect width="{W}" height="{H}" rx="12" fill="{t["bg"]}"/>',
+         f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="11" fill="none" stroke="{t["border"]}" stroke-width="1.5" stroke-opacity="0.55"/>',
          f'<text x="24" y="34" font-size="16" font-weight="700" fill="{t["title"]}">Commit Activity</text>',
          f'<text x="{W-24}" y="34" font-size="12" text-anchor="end" fill="{t["text"]}">{cal["totalContributions"]} contributions in {YEAR}</text>']
     last_m = -1
