@@ -1,25 +1,43 @@
+# TUTORIAL - Workflow que atualiza o gráfico de commits sozinho
+# =============================================================
+# Um workflow é uma automação do GitHub Actions. Este arquivo precisa ficar em
+# .github/workflows/ para o GitHub reconhecê-lo. Ele roda o script
+# .github/scripts/generate_commits.py e salva os SVGs gerados no repositório.
+#
+# Pré-requisito: Settings > Actions > General > Workflow permissions =
+# "Read and write permissions" (senão o passo de commit/push é negado).
+
 name: Update Commit Graph
 
+# QUANDO roda:
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"   # a cada 6 horas (minuto 0 de 0h, 6h, 12h e 18h UTC)
+  workflow_dispatch:         # botão "Run workflow" na aba Actions (execução manual)
   push:
     paths:
-      - ".github/scripts/generate_commits.py"
+      - ".github/scripts/generate_commits.py"   # roda também quando o script muda
 
+# O workflow precisa de permissão para escrever (fazer push dos SVGs).
 permissions:
   contents: write
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest        # máquina virtual Linux fornecida pelo GitHub
     steps:
+      # 1) Baixa o código do repositório na máquina virtual
       - uses: actions/checkout@v4
+
+      # 2) Roda o script. GITHUB_TOKEN é criado automaticamente pelo GitHub
+      #    e o script usa ele para consultar a API.
       - name: Generate commit graph
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/generate_commits.py
+
+      # 3) Se os SVGs mudaram, faz commit e push. Se nada mudou, não faz nada.
+      #    "[skip ci]" na mensagem evita disparar outros workflows por causa deste commit.
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

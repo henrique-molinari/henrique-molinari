@@ -1,3 +1,14 @@
+# TUTORIAL - Workflow do jogo "space shooter" (game.gif)
+# ======================================================
+# Usa a Action pronta czl9707/gh-space-shooter, que lê o seu gráfico de
+# contribuições e gera um GIF em que uma nave destrói os quadradinhos.
+# O GIF é salvo como game.gif na raiz e mostrado no README com uma tag img.
+#
+# Como usar: copie este arquivo para .github/workflows/, vá em
+# Actions > Update Space Shooter Game > Run workflow para gerar o primeiro GIF.
+# Pré-requisito: Settings > Actions > General > Workflow permissions =
+# "Read and write permissions".
+
 name: Update Space Shooter Game
 
 on:
@@ -6,7 +17,7 @@ on:
   workflow_dispatch:        # permite rodar manualmente pela aba Actions
 
 permissions:
-  contents: write
+  contents: write           # necessário para salvar o game.gif no repositório
 
 jobs:
   update-game:
@@ -18,6 +29,6 @@ jobs:
 
       - uses: czl9707/gh-space-shooter@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: "game.gif"
-          strategy: "random"
+          github-token: ${{ secrets.GITHUB_TOKEN }}   # token automático do GitHub
+          output-path: "game.gif"                     # nome do arquivo gerado
+          strategy: "random"                          # estratégia de movimento da nave
