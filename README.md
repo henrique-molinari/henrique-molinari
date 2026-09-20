@@ -85,7 +85,7 @@
 <!-- ===== COMMIT ACTIVITY GRAPH ===== -->
 <br/>
 <div align="center">
-<img width="100%" alt="Commit activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=henrique-molinari&bg_color=060B08&color=00FF66&line=00FF66&point=E6FFEE&area=true&area_color=00FF66&title_color=00FF66&hide_border=true&custom_title=Commit%20Activity" />
+<img width="100%" alt="Commit activity" src="https://ghchart.rshah.org/00FF66/henrique-molinari" />
 </div>
 <!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
 
