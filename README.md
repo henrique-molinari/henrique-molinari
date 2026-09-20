@@ -85,7 +85,11 @@
 <!-- ===== COMMIT ACTIVITY GRAPH ===== -->
 <br/>
 <div align="center">
-<img width="100%" alt="Commit activity" src="https://ghchart.rshah.org/00FF66/henrique-molinari" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+</picture>
 </div>
 <!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
 
