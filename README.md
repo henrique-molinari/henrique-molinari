@@ -1,3 +1,10 @@
+<!-- ===== MATRIX HEADER ===== -->
+<div align="center">
+<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/header.svg" width="100%"/>
+</div>
+
+<br/>
+
 <!-- ===== THEME-AWARE HERO BANNER ===== -->
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
@@ -74,5 +81,12 @@
 </div>
 
 <!-- ===== END SOCIAL BADGES ===== -->
+
+<!-- ===== COMMIT ACTIVITY GRAPH ===== -->
+<br/>
+<div align="center">
+<img width="100%" alt="Commit activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=henrique-molinari&bg_color=060B08&color=00FF66&line=00FF66&point=E6FFEE&area=true&area_color=00FF66&title_color=00FF66&hide_border=true&custom_title=Commit%20Activity" />
+</div>
+<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
 
 <!-- =================================== -->
