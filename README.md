@@ -32,18 +32,24 @@
 </picture>
 
 <br/>
+<br/>
 
 <!-- Stats + Top languages — side by side -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=00FF66&icon_color=00CC44&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
+  <img width="48.5%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
 </picture>
+&nbsp;&nbsp;
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=00FF66&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
+  <img width="48.5%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
 </picture>
 
+<br/>
+
 </div>
+
+<br/>
 
 <!-- ===== COMMIT ACTIVITY GRAPH ===== -->
 <div align="center">
@@ -54,6 +60,8 @@
 </picture>
 </div>
 <!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
+
+<br/>
 
 <!-- ===== CONTRIBUTION SPACE SHOOTER ===== -->
 
