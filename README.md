@@ -62,6 +62,17 @@
 </div>
 -->
 
+<!-- ===== COMMIT ACTIVITY GRAPH ===== -->
+<br/>
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+</picture>
+</div>
+<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
+
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
 <div align="center">
@@ -82,15 +93,5 @@
 
 <!-- ===== END SOCIAL BADGES ===== -->
 
-<!-- ===== COMMIT ACTIVITY GRAPH ===== -->
-<br/>
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-</picture>
-</div>
-<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
 
 <!-- =================================== -->
