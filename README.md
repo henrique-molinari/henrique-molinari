@@ -1,6 +1,6 @@
 <!-- ===== MATRIX HEADER ===== -->
 <div align="center">
-<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/header.svg" width="100%"/>
+<img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/958be9f70fd289787b06e10fdbe4bcd9582e38eb/header.svg" width="100%"/>
 </div>
 
 <br/>
@@ -9,9 +9,9 @@
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/light.svg">
-  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/958be9f70fd289787b06e10fdbe4bcd9582e38eb/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/958be9f70fd289787b06e10fdbe4bcd9582e38eb/light.svg">
+  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/958be9f70fd289787b06e10fdbe4bcd9582e38eb/light.svg">
 </picture>
 
 <!-- ===== GITHUB STATS ===== -->
