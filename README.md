@@ -3,8 +3,6 @@
 <img alt="Wake up, HRK... Java enthusiast. Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/e32f5e882fca859769ef178d2f596bcb98c3ff5c/header.svg" width="100%"/>
 </div>
 
-<br/>
-
 <!-- ===== THEME-AWARE HERO BANNER ===== -->
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
@@ -38,6 +36,16 @@
 
 </div>
 
+<!-- ===== COMMIT ACTIVITY GRAPH ===== -->
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
+</picture>
+</div>
+<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
+
 <!-- ===== CONTRIBUTION SPACE SHOOTER ===== -->
 
 <div align="center">
@@ -61,16 +69,6 @@
 <img width="100%" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/projects/projects.svg" alt="Projects" />
 </div>
 -->
-
-<!-- ===== COMMIT ACTIVITY GRAPH ===== -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-</picture>
-</div>
-<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
 
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
