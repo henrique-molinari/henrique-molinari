@@ -9,9 +9,9 @@
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/3a4626108b7eb485d8de952a7d1792ce63824895/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/3a4626108b7eb485d8de952a7d1792ce63824895/light.svg">
-  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/3a4626108b7eb485d8de952a7d1792ce63824895/light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
+  <img alt="Henrique Molinari" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/849686971929c3b8f641d16285b2cda10ff788ec/light.svg">
 </picture>
 
 <!-- ===== GITHUB STATS ===== -->
