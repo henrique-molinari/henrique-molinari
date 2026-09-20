@@ -29,15 +29,15 @@ def level(n, mx):
 
 def render(cal, t):
     weeks = cal["weeks"]
-    cell, gap, left, top = 12, 3, 44, 62
-    step = cell + gap
-    W = left + len(weeks) * step + 24
-    H = top + 7 * step + 46
+    left, top, W = 44, 62, 1180
+    step = (W - left - 24) / len(weeks)
+    cell = step - 3
+    H = round(top + 7 * step + 46)
     mx = max(d["contributionCount"] for w in weeks for d in w["contributionDays"])
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
          f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Commit activity">',
-         f'<rect width="{W}" height="{H}" rx="12" fill="{t["bg"]}"/>',
-         f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="11" fill="none" stroke="{t["border"]}" stroke-width="1.5" stroke-opacity="0.55"/>',
+         f'<rect width="{W}" height="{H}" rx="18" fill="{t["bg"]}"/>',
+         f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="17" fill="none" stroke="{t["border"]}" stroke-width="1"/>',
          f'<text x="24" y="34" font-size="16" font-weight="700" fill="{t["title"]}">Commit Activity</text>',
          f'<text x="{W-24}" y="34" font-size="12" text-anchor="end" fill="{t["text"]}">{cal["totalContributions"]} contributions in {YEAR}</text>']
     last_m = -1
@@ -49,15 +49,15 @@ def render(cal, t):
             last_m = m
         for j, d in enumerate(w["contributionDays"]):
             c = d["contributionCount"]
-            o.append(f'<rect x="{left+i*step}" y="{top+j*step}" width="{cell}" height="{cell}" rx="2" fill="{t["levels"][level(c, mx)]}"><title>{d["date"]}: {c}</title></rect>')
+            o.append(f'<rect x="{left+i*step}" y="{top+j*step}" width="{cell}" height="{cell}" rx="3" fill="{t["levels"][level(c, mx)]}"><title>{d["date"]}: {c}</title></rect>')
     for j, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         o.append(f'<text x="24" y="{top+j*step+10}" font-size="10" text-anchor="middle" fill="{t["text"]}">{name[0]}</text>')
     ly = H - 22
-    lx = W - 24 - 5 * step - 60
+    lx = W - 24 - 5 * 15 - 60
     o.append(f'<text x="{lx}" y="{ly+10}" font-size="10" fill="{t["text"]}">Less</text>')
     for k, col in enumerate(t["levels"]):
-        o.append(f'<rect x="{lx+34+k*step}" y="{ly}" width="{cell}" height="{cell}" rx="2" fill="{col}"/>')
-    o.append(f'<text x="{lx+34+5*step+4}" y="{ly+10}" font-size="10" fill="{t["text"]}">More</text></svg>')
+        o.append(f'<rect x="{lx+34+k*15}" y="{ly}" width="12" height="12" rx="2" fill="{col}"/>')
+    o.append(f'<text x="{lx+34+5*15+4}" y="{ly+10}" font-size="10" fill="{t["text"]}">More</text></svg>')
     return "".join(o)
 
 def main():
