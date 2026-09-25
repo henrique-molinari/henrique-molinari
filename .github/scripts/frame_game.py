@@ -12,8 +12,8 @@ from PIL import Image, ImageDraw
 BORDER = (0, 255, 102)      # #00FF66, o mesmo verde das bordas dos cards
 CARD_BG = (6, 11, 8)        # #060B08, fundo dos cards
 SOURCE_BG = (13, 17, 23)    # fundo original do GIF gerado pela action
-BORDER_WIDTH = 1
-RADIUS = 14
+BORDER_WIDTH = 0.75   # o GIF é exibido em escala maior que os cards; isso iguala a espessura visível
+RADIUS = 13
 PAD = 6                     # respiro entre a moldura e o jogo
 SCALE = 4                   # supersampling para suavizar a borda
 
@@ -26,7 +26,7 @@ def build_masks(size):
     ImageDraw.Draw(outer).rounded_rectangle(
         (0, 0, big[0] - 1, big[1] - 1), RADIUS * SCALE, fill=255)
     inner = Image.new("L", big, 0)
-    inset = BORDER_WIDTH * SCALE
+    inset = round(BORDER_WIDTH * SCALE)
     ImageDraw.Draw(inner).rounded_rectangle(
         (inset, inset, big[0] - 1 - inset, big[1] - 1 - inset),
         (RADIUS - BORDER_WIDTH) * SCALE, fill=255)
