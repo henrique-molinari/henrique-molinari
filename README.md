@@ -135,18 +135,18 @@
   Parâmetros do card de linguagens (/api/top-langs/):
     layout=compact             barra única com legenda em colunas
     langs_count=8              quantidade de linguagens exibidas
-  Largura: cada imagem usa width="48.8%" e há só UM espaço (a quebra de linha
-  entre as tags) entre elas. 48,8% + 48,8% + esse espaço cabem na linha mesmo
+  Largura: cada imagem usa width="49.2%" e há só UM espaço (a quebra de linha
+  entre as tags) entre elas. 49,2% + 49,2% + esse espaço cabem na linha mesmo
   em telas de celular. Com um espaço maior (ex.: dois &nbsp;) a soma passa de
   100% no celular e o segundo card cai para baixo do primeiro.
 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=00FF66&icon_color=00CC44&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="48.8%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
+  <img width="49.2%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=00FF66&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="48.8%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
+  <img width="49.2%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
 </picture>
 
 <br/>
