@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw
 BORDER = (0, 255, 102)      # #00FF66, o mesmo verde das bordas dos cards
 CARD_BG = (6, 11, 8)        # #060B08, fundo dos cards
 SOURCE_BG = (13, 17, 23)    # fundo original do GIF gerado pela action
-BORDER_WIDTH = 2
+BORDER_WIDTH = 1
 RADIUS = 14
 PAD = 6                     # respiro entre a moldura e o jogo
 SCALE = 4                   # supersampling para suavizar a borda
