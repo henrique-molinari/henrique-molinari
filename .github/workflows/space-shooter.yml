@@ -3,6 +3,8 @@
 # Usa a Action pronta czl9707/gh-space-shooter, que lê o seu gráfico de
 # contribuições e gera um GIF em que uma nave destrói os quadradinhos.
 # O GIF é salvo como game.gif na raiz e mostrado no README com uma tag img.
+# Como o README não aceita CSS, a moldura (retângulo com contorno verde e
+# cantos arredondados) é desenhada dentro do GIF por .github/scripts/frame_game.py.
 #
 # Como usar: copie este arquivo para .github/workflows/, vá em
 # Actions > Update Space Shooter Game > Run workflow para gerar o primeiro GIF.
@@ -30,5 +32,21 @@ jobs:
       - uses: czl9707/gh-space-shooter@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}   # token automático do GitHub
-          output-path: "game.gif"                     # nome do arquivo gerado
+          output-path: "game-raw.gif"                 # GIF puro, ainda sem moldura
           strategy: "random"                          # estratégia de movimento da nave
+          no-commit: "true"                           # quem faz o commit é o passo final
+
+      - name: Add frame to the GIF
+        run: |
+          pip install pillow numpy
+          python .github/scripts/frame_game.py game-raw.gif game.gif
+          rm game-raw.gif
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add game.gif
+          git diff --cached --quiet || git commit -m "Update space shooter game GIF"
+          git pull --rebase
+          git push

@@ -13,21 +13,19 @@
     2. Painel principal (terminal) -> dark.svg / light.svg
     3. Card de streak              -> serviço externo streak-stats
     4. Cards de stats e linguagens -> serviço externo github-readme-stats
-    5. Gráfico de commits do ano   -> commits-dark.svg / commits-light.svg
-                                      (gerado por .github/scripts/generate_commits.py)
-    6. Jogo space shooter          -> game.gif (gerado por uma GitHub Action)
-    7. Botões de contato           -> shields.io
+    5. Jogo space shooter          -> game.gif (gerado por uma GitHub Action)
+    6. Botões de contato           -> shields.io
 
   PASSO 0 - PREPARAÇÃO (faça uma vez)
     a) Crie um repositório PÚBLICO chamado exatamente como o seu usuário
        e marque "Add a README file".
     b) No seu perfil, clique em "Contribution settings" (menu ao lado do
        gráfico de contribuições) e deixe MARCADO "Private contributions".
-       Sem isso, commits em repositórios privados não aparecem no gráfico
-       de commits gerado aqui (a API não os enxerga).
+       Sem isso, commits em repositórios privados não aparecem no jogo
+       nem nos cards (a API não os enxerga).
     c) Em Settings > Actions > General do repositório, em "Workflow
        permissions", escolha "Read and write permissions". Isso permite
-       que as automações salvem os arquivos gerados (SVG e GIF).
+       que as automações salvem os arquivos gerados (GIF).
 
   TÉCNICAS QUE SE REPETEM NO ARQUIVO
     * picture + source media="(prefers-color-scheme: dark)":
@@ -137,17 +135,18 @@
   Parâmetros do card de linguagens (/api/top-langs/):
     layout=compact             barra única com legenda em colunas
     langs_count=8              quantidade de linguagens exibidas
-  Largura: cada imagem usa width="48.5%" e há um "&nbsp;&nbsp;" entre elas.
-  O &nbsp; cria o espaço horizontal; 48,5% + 48,5% + espaço cabem na linha.
+  Largura: cada imagem usa width="48.8%" e há só UM espaço (a quebra de linha
+  entre as tags) entre elas. 48,8% + 48,8% + esse espaço cabem na linha mesmo
+  em telas de celular. Com um espaço maior (ex.: dois &nbsp;) a soma passa de
+  100% no celular e o segundo card cai para baixo do primeiro.
 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=00FF66&icon_color=00CC44&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="48.5%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
+  <img width="48.8%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=henrique-molinari&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&line_height=24&hide_border=false&border_radius=18&title_color=15803D&icon_color=16A34A&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Henrique's GitHub stats" />
 </picture>
-&nbsp;&nbsp;
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=00FF66&text_color=8FBF9F&bg_color=060B08&card_width=580&border_color=00FF66" />
-  <img width="48.5%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
+  <img width="48.8%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=henrique-molinari&layout=compact&langs_count=8&hide_border=false&border_radius=18&title_color=15803D&text_color=0F172A&bg_color=FFFFFF&card_width=580&border_color=16A34A" alt="Top languages" />
 </picture>
 
 <br/>
@@ -156,38 +155,17 @@
 
 <br/>
 
-<!-- ===== 5) GRÁFICO DE COMMITS DO ANO =====
-  PASSO 5 - Um gráfico próprio, no estilo do calendário do GitHub, mas
-  somente do ANO ATUAL (1º de janeiro a 31 de dezembro). Ele é desenhado por
-  um script Python (.github/scripts/generate_commits.py) que consulta a
-  API GraphQL do GitHub e escreve dois arquivos:
-    commits-dark.svg   e   commits-light.svg
-  Quem roda o script é o workflow .github/workflows/commits-graph.yml,
-  automaticamente a cada 6 horas (e sempre que o script for alterado).
-  Cada quadradinho é um dia; dias com pelo menos 1 commit ficam em verde
-  claramente visível. Passe o mouse num quadrado para ver "data: quantidade".
-  O gráfico tem 1180 px de largura, igual ao painel principal e ao card de streak.
-  Lembre-se do Passo 0b (Private contributions) para contar repositórios privados.
--->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-  <img width="100%" alt="Commit activity" src="https://raw.githubusercontent.com/henrique-molinari/henrique-molinari/main/commits-light.svg">
-</picture>
-</div>
-<!-- ===== END COMMIT ACTIVITY GRAPH ===== -->
-
-<br/>
-
-<!-- ===== 6) JOGO SPACE SHOOTER =====
-  PASSO 6 - Um GIF animado em que uma nave "destrói" o seu gráfico de
+<!-- ===== 5) JOGO SPACE SHOOTER =====
+  PASSO 5 - Um GIF animado em que uma nave "destrói" o seu gráfico de
   contribuições. É gerado pela Action czl9707/gh-space-shooter,
   configurada em .github/workflows/space-shooter.yml (roda todo dia à
   meia-noite UTC) e salva o resultado como game.gif na raiz do repositório.
   Para usar: copie o workflow, rode-o uma vez em Actions > Update Space
   Shooter Game > Run workflow, e depois referencie o game.gif com a img abaixo.
-  Obs.: o GitHub não permite borda em GIF via README.
+  O GitHub não aceita CSS (nem borda) em imagens do README, então o
+  retângulo com contorno verde e cantos arredondados é desenhado dentro do
+  próprio GIF pelo script .github/scripts/frame_game.py, que o workflow
+  executa logo depois de gerar o jogo.
 -->
 
 <div align="center">
@@ -212,8 +190,8 @@
 </div>
 -->
 
-<!-- ===== 7) BOTÕES DE CONTATO =====
-  PASSO 7 - Badges do shields.io. O formato da URL é:
+<!-- ===== 6) BOTÕES DE CONTATO =====
+  PASSO 6 - Badges do shields.io. O formato da URL é:
     https://img.shields.io/badge/TEXTO-COR_FUNDO?style=for-the-badge&logo=NOME&logoColor=COR&labelColor=COR
   O LinkedIn usa um ícone SVG embutido em base64 (logo=data:image/svg+xml;base64,...)
   porque o nome "linkedin" não está disponível em todas as versões do shields.
