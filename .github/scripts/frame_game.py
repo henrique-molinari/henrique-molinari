@@ -14,7 +14,7 @@ CARD_BG = (6, 11, 8)        # #060B08, fundo dos cards
 SOURCE_BG = (13, 17, 23)    # fundo original do GIF gerado pela action
 BORDER_WIDTH = 0.75   # o GIF é exibido em escala maior que os cards; isso iguala a espessura visível
 RADIUS = 13
-PAD = 6                     # respiro entre a moldura e o jogo
+PAD = 6                     # respiro entre a moldura e o game
 SCALE = 4                   # supersampling para suavizar a borda
 
 
